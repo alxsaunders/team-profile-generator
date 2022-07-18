@@ -21,3 +21,6 @@ const managerQuestions = () => {
     })
 }
 
+const internQuestions = () => {
+    inquirer.prompt()
+}
