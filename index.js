@@ -6,7 +6,7 @@ const writeFile = require('./src/writie-file')
 const { Manager, managerQuestionsArr } = require('./lib/Manager');
 const { Engineer, engineerQuestionsArr } = require('./lib/Engineer');
 const { Intern, internQuestionsArr } = require('./lib/Intern');
-const { AsyncAction } = require('rxjs/internal/scheduler/AsyncAction');
+
 
 // stores all team member objects
 const employeesArr = []
