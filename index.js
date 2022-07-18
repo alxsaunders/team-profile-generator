@@ -6,6 +6,7 @@ const writeFile = require('./src/writie-file')
 const { Manager, managerQuestionsArr } = require('./lib/Manager');
 const { Engineer, engineerQuestionsArr } = require('./lib/Engineer');
 const { Intern, internQuestionsArr } = require('./lib/Intern');
+const { AsyncAction } = require('rxjs/internal/scheduler/AsyncAction');
 
 // stores all team member objects
 const employeesArr = []
@@ -21,6 +22,22 @@ const managerQuestions = () => {
     })
 }
 
-const internQuestions = () => {
-    inquirer.prompt()
+const engineerQuestions = () => {
+    inquirer.prompt(engineerQuestionsArr)
+    .then((answers) => {
+        answers = new Engineer(answers.name, answers.id, answers.email, answers.github)
+        employeesArr.push(answers);
+        return employeePrompt()
+    })
 }
+
+const internQuestions = () => {
+    inquirer.prompt(internQuestionsArr)
+    .then((answers) => {
+        answers = new Intern(answers.name, answers.id, answers.email, answers.school)
+        employeesArr.push(answers)
+        return employeePrompt()
+    })
+}
+
+init()
