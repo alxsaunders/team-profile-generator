@@ -8,6 +8,7 @@ const { Engineer, engineerQuestionsArr } = require('./lib/Engineer');
 const { Intern, internQuestionsArr } = require('./lib/Intern');
 
 
+
 // stores all team member objects
 const employeesArr = []
 
@@ -37,6 +38,32 @@ const internQuestions = () => {
         answers = new Intern(answers.name, answers.id, answers.email, answers.school)
         employeesArr.push(answers)
         return employeePrompt()
+    })
+}
+
+const employeePrompt = () => {
+    inquirer.prompt([{
+        type: 'list',
+        name: 'employeeType',
+        message: "What kind of team member would you like to add?",
+        choices: [
+            {name: 'Engineer', value: "addEngineer"},
+            {name: 'Intern', value: "addIntern"},
+            {name: 'DONE', value: "done"}
+        ]
+    }])
+    .then( answer => {
+        if (answer.employeeType === 'addEngineer') { engineerQuestions(); }
+        if (answer.employeeType === 'addIntern') { internQuestions(); };
+        if (answer.employeeType === 'done') {
+            let html = template(employeesArr)
+            console.log('...');
+
+
+            writeFile(html);
+            
+        }
+
     })
 }
 
