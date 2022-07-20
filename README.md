@@ -20,7 +20,7 @@ Build a Node.js command-line application that takes in information about employe
 
 # Walkthrough-Video
 
-[Walkthrough Video Link]()
+[Walkthrough Video Link](https://drive.google.com/file/d/1cdjdXxhTgBQ60DZSCngl_ru_nNH5tIX3/view)
 
 
 # ScreenShots 
