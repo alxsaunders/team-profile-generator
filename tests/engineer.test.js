@@ -3,11 +3,11 @@ const { engineer, Engineer } = require('../lib/Engineer')
 
 test('Creates new Engineer', () => 
 {
-    const employee = new Engineer('John Smith', 1234, "john@smith.com", 'john-smith');
+    const employee = new Engineer('Alex Saunders', 1234, "alex@saunders.com", 'alex-saunders');
 
-    expect(employee.name).toBe("John Smith")
+    expect(employee.name).toBe("Alex Saunders")
     expect(employee.id).toEqual(1234)
-    expect(employee.email).toBe("john@smith.com")
-    expect(employee.github).toBe("john-smith")
+    expect(employee.email).toBe("alex@saunders.com")
+    expect(employee.github).toBe("alex-saunders")
     expect(employee.getRole()).toBe('Engineer');
 })
