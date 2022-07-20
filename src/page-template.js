@@ -78,7 +78,7 @@ const manager = manager => {
       <head>
         <title>Team Profile</title>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
-        <link rel="stylesheet" href="./style.css"><source src="../page-template.js" type="page-template">
+        <link rel="stylesheet" href="../lib/style.css"><source src="../page-template.js" type="page-template">
       </head>
       <body>
       <header>

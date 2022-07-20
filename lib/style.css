@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+    
+}
+
+header {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-items: center;
+    width: 100%;
+    height: 20vh;
+    background-color: #60aaff;
+    margin: 0px;
+    justify-content: center;
+}
+
+header h1 {
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+}
+div.box.name-role {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    color: white;
+    font-weight: bold;
+    align-items: center;
+}
+
+body {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+
+    background: #f5f4f7;
+}
+main {
+    padding-top: 40px;
+}
+
+main .card {
+    display: inline-flex;
+    justify-content: space-between;
+
+}
+
+
+.name-role {
+    display: flex;
+    padding: 20px;
+    justify-content: space-around;
+}
+.name-role  h2{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.manager-name { 
+    background-color: #ff3535; }
+
+.engineer-name { 
+    background-color: #95ff95; }
+
+.intern-name { 
+    background-color: #fff388; }
+
+.employee-info { 
+    background-color: #f5f4f7; }
+
+ .card { 
+    padding: 20px;
+    box-shadow: 5px 5px 5px;
+ }
