@@ -25,6 +25,6 @@ Build a Node.js command-line application that takes in information about employe
 
 # ScreenShots 
 
-![Screenshot](/dist/images/screenshot.png)
+![Screenshot](/lib/images/screenshot.png)
 
 
