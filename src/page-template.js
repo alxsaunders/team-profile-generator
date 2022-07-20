@@ -1,15 +1,15 @@
-const manager = managerData => {
+const manager = manager => {
     return `
-    <div id="${managerData.getRole()}-card" class="box card">
+    <div id="${manager.getRole()}-card" class="box card">
       <div class="box name-role manager-name">
-        <h2>${managerData.getName()}</h2>
-        <h3>Role: ${managerData.getRole()}</h3>
+        <h2>${manager.getName()}</h2>
+        <h3>Role: ${manager.getRole()}</h3>
       </div> 
       <div class="box employee-info">
         <ul class="list-group">
-          <li class="list-group-item">ID: ${managerData.getId()}</li>
-          <li class="list-group-item">Email: <a href="mailto:${managerData.getEmail()}">${managerData.getEmail()}</a></li>
-          <li class="list-group-item">Office Number: ${managerData.getOfficeNumber()}</li>
+          <li class="list-group-item">ID: ${manager.getId()}</li>
+          <li class="list-group-item">Email: <a href="mailto:${manager.getEmail()}">${manager.getEmail()}</a></li>
+          <li class="list-group-item">Office Number: ${manager.getOfficeNumber()}</li>
         </ul>
       </div>
     </div>
@@ -76,7 +76,7 @@ const manager = managerData => {
     <!DOCTYPE html>
     <html>
       <head>
-        <title>Team Profile 💪</title>
+        <title>Team Profile</title>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
         <link rel="stylesheet" href="./style.css"><source src="../page-template.js" type="page-template">
       </head>
